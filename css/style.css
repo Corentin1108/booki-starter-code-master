@@ -307,7 +307,7 @@ nav ul a:hover {
 .hebergements-card .card-title {
     margin-top: 4px;
     margin-bottom: 8px;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 /*sous-titre des cards*/
@@ -399,6 +399,7 @@ nav ul a:hover {
 }
 .activity-card .card {
     padding: 0px;
+    height: 100%;
 }
 
 .activity-card a {
@@ -410,7 +411,7 @@ nav ul a:hover {
     width: 100%;
     height: 380px;
     border-radius: 20px 20px 0px 0px;
-    object-fit: cover;
+
 
 }
 
@@ -428,7 +429,6 @@ nav ul a:hover {
     display: flex;
     flex-direction: row;
     padding-top: 35px;
-    margin-bottom: 58px;
   
    
 }
@@ -476,7 +476,7 @@ nav ul a:hover {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        /* gap: 20px; */
+       
     }
 
     .populaires-cards a {
@@ -492,21 +492,98 @@ nav ul a:hover {
         font-size: 13px;
     }
 
+  
+
     
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    .header {
+
+    
+
+    .logo-booki {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+   
+    header {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .input-form::placeholder{
+        display: none;
+
+    }
+
+    .search-button-icon{
+        display: flex;
+    }
+
+    .button-filtres-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .button-filtres {
+        width: 45%;
+    }
+
+    .info-container {
+        padding: 0px 10px;
+    }
+
+
+
+    
+
+    .hebergements-card {
+        order: 2;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .hebergements-card a {
+        width: 100%;
+    }
+
+    .populaires-cards{
+        order: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .populaires-cards a {
+        width: 100%;
+    }
+
+    .activity-card {
+        
         display: flex;
         flex-direction: column;
         align-items: center;
-    
+        justify-content: center;
     }
-    .nav ul a{
+
+    .activity-img-card{
+        height: 70%;
+    }
+
+    .activity-card a{
+        width: 100%;   
+    }
+
+    .footer-container{
         display: flex;
         flex-direction: column;
-
+        align-items: center;
+        /* justify-content: center; */ 
     }
-    /* ... */
+  
 }
