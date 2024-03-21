@@ -102,6 +102,8 @@ nav ul a:hover {
     color: #0065FC;
 }
 
+
+
 /*****fin du header*****/
 
 /*****title and p du headline*****/
@@ -274,12 +276,16 @@ nav ul a:hover {
     width: 30%;
 }
 
+.hebergements .section-title {
+    padding-bottom: 30px;
+}
+
 /*agencement des cards*/
 .hebergements-card {
     display: flex; 
     justify-content: center;
     gap:30px;
-    padding-top: 30px;
+    /* padding-top: 30px; */
     padding-bottom: 30px;
     
 }
@@ -328,11 +334,13 @@ nav ul a:hover {
 .hebergements-end a {
     font-size: 18px;
     font-weight: 700;
+    
 }
 
 /****** Populaires ***********/
 .populaires {
     width: 32%;
+    
 }
  /*titre*/
 .populaires-title {
@@ -492,6 +500,13 @@ nav ul a:hover {
         font-size: 13px;
     }
 
+    .logo-booki {
+        padding: 30px;
+    }
+
+    .main-container {
+        padding: 0px;
+    }
   
 
     
@@ -501,26 +516,118 @@ nav ul a:hover {
 @media (max-width: 767.98px) {
 
     
-
+/*****logo*****/ 
     .logo-booki {
         flex-direction: column;
         align-items: flex-start;
+        padding: 30px;
     }
-   
+
+    .main-container {
+        padding: 0px;
+    }
+  
+/*****fin logo*****/
+
+
+
+
+/*****header*****/
+
     header {
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
 
-    .input-form::placeholder{
+    nav ul a {
+        display: block;
+        font-size: 16px;
+        padding: 14px 34px;
+        border-bottom: 2px #F2F2F2 solid;
+        border-width: 100%;
+        
+     }
+     
+     nav ul a:hover {
+         border-bottom-color: #0065FC;
+         color: #0065FC;
+         
+        
+     }
+
+     nav ul a:hover {
+        border-top-color: transparent;
+        color: #0065FC;
+        
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    nav ul {
+        gap: 0px;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    nav ul li {
+        text-align: center;
+        flex: 1;
+    }
+/*****fin header*****/
+
+
+/*****headline*****/
+
+    .headline {
+        padding: 20px;
+     }
+
+/*****search bar*****/
+
+    .search {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .search-form {
+        margin: 0px;
+    }
+
+
+    .search-button {
+    width: 60%;
+    border-radius: 15px;
+    filter: drop-shadow(0px 4px  rgba(0, 0, 0, 0.10));
+
+    }
+
+    .search-button-text {
         display: none;
 
     }
 
-    .search-button-icon{
+    .search-button-icon {
         display: flex;
+        padding: 15px 16px;
     }
+
+    .input-form {
+        width: 90%;
+    }
+/*****fin search bar*****/
+
+
+    
+/*****filtres*****/
+
+    .filtres-container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
 
     .button-filtres-container {
         display: flex;
@@ -529,30 +636,52 @@ nav ul a:hover {
 
     .button-filtres {
         width: 45%;
+        font-size: 14px;
     }
+/*****fin filtres*****/
+
+/*****info*****/
 
     .info-container {
-        padding: 0px 10px;
+        padding-left: 10px;
     }
 
-
-
     
-
+/*****hebergement card*****/
     .hebergements-card {
-        order: 2;
         display: flex;
         align-items: center;
         flex-direction: column;
         justify-content: center;
     }
 
+    .hebergements-and-populaires section {
+        border-radius: 0;
+        background-color: white;
+      }
+      .hebergements-and-populaires section.populaires {
+        order: -1; /*Pour inverser les section populaires et hébergements*/
+        margin: 0;
+        background-color: var(--main-bg-color);
+      }
+
+   
+
+
+
     .hebergements-card a {
         width: 100%;
     }
+/*****fin hebergement card*****/
+
+
+    /* .hebergements-and-populaires section {
+        background-color: white;
+    } */
+
+/*****populaire card*****/
 
     .populaires-cards{
-        order: 1;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -562,9 +691,12 @@ nav ul a:hover {
     .populaires-cards a {
         width: 100%;
     }
+/*****fin populaires card*****/
 
+
+
+/*****activity card*****/
     .activity-card {
-        
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -572,18 +704,35 @@ nav ul a:hover {
     }
 
     .activity-img-card{
-        height: 70%;
+        width: 100%;
+        height: 30vw;
     }
 
     .activity-card a{
         width: 100%;   
     }
+/*****fin activity card*****/
 
+
+
+
+/*****footer*****/
     .footer-container{
         display: flex;
         flex-direction: column;
         align-items: center;
-        /* justify-content: center; */ 
+        justify-content: center; 
     }
+
+    .text-footer p,
+    .text-footer h2 {
+       padding: 0px 30px;
+    }
+
+
+
+   
+/*****fin footer*****/
   
+     
 }
