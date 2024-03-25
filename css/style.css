@@ -659,7 +659,8 @@ nav ul a:hover {
         border-radius: 0;
         background-color: white;
       }
-      .hebergements-and-populaires section.populaires {
+
+    .hebergements-and-populaires section.populaires {
         order: -1; /*Pour inverser les section populaires et hébergements*/
         margin: 0;
         background-color: var(--main-bg-color);
@@ -726,7 +727,16 @@ nav ul a:hover {
 
     .text-footer p,
     .text-footer h2 {
-       padding: 0px 30px;
+      padding: 0px 30px;
+      
+       
+    }
+
+    .text-footer {
+        padding: 0px;
+        padding-bottom: 50px;
+        padding-top: 20px ;
+        
     }
 
 
